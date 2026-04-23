@@ -4,7 +4,14 @@ on:
 jobs:
     print:
         runs-on: macOS-latest
+        defaults:
+            run:
+                working-directory: backend
         steps:
-            - name : Print hello
-              run : echo "heelpo worls"
-    second-job: 
+            - name: Run test
+              run: npm ci
+            - name: Run test
+              run: npm test
+
+            
+ 
