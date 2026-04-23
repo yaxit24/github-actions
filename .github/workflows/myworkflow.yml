@@ -1,0 +1,10 @@
+name: Print Hello World
+on: 
+    push :
+jobs:
+    print:
+        runs-on: macOS-latest
+        steps:
+            - name : Print hello
+              run : echo "heelpo worls"
+    second-job: 
